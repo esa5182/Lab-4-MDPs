@@ -1,6 +1,7 @@
 from random import random
 
 class MDP():
+    
     def __init__(self, numStates, numActions, name, filename=None):
         self.name = name
         if not filename: # create a blank MDP with all 0, based on specified sizes
@@ -145,3 +146,4 @@ def generate_random_mdp(numStates, numActions):
         mdp.isTerminal[state] = random() < 0.1
 
     return mdp
+
